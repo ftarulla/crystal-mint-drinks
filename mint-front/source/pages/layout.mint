@@ -31,6 +31,7 @@ component Layout {
 
   style content {
     flex: 1;
+    padding: 0 20px;
   }
 
   style footer {

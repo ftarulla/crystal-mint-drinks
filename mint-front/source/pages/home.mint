@@ -52,7 +52,7 @@ component Pages.Home {
         <span>
           "A simple site with 4 non-alcoholic summer drinks as featured in "
           <a::fifteenspatulas href="https://www.fifteenspatulas.com/4-refreshing-summer-drinks/" target="_blank">"4 Refreshing Summer Drinks"</a>
-          "! The site was built as a PoC using "
+          "! The site was built as an example of using "
           <a::mint::lang href="https://www.mint-lang.com" target="_blank">"Mint"</a>
           " in the frontend and "
           <a::crystal::lang href="https://crystal-lang.org/" target="_blank">"Crystal"</a>

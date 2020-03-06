@@ -2,7 +2,7 @@ component Drinks.Item {
   property drink : Drink = Drink.empty()
 
   style base {
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
     border-radius: 2px;
     background: #FFF;
     padding: 10px;
@@ -15,14 +15,12 @@ component Drinks.Item {
   style link {
     text-decoration: none;
     transition: 50ms;
-    color: inherit;
+    color: #6a9981;
     display: block;
 
-    /*
     &:hover {
-      color: #{primary};
+      color: #405d4e;
     }
-    */
 
     display: flex;
     flex-direction: row;
@@ -31,6 +29,8 @@ component Drinks.Item {
 
   style icon {
     flex: 1;
+    font-size: 22px;
+    margin: 0 3px;
     max-width: 24px;
     text-align: center;
   }
@@ -39,13 +39,13 @@ component Drinks.Item {
     flex: 1;
     font-weight: 400;
     font-size: 21px;
-    margin: 0 0.2em 0;
+    margin: 0 7px 0;
   }
 
   fun render : Html {
     <div::base>
       <div::content>
-        <a::link href={drink.url}>
+        <a::link href={drink.url} target="_blank">
           <div::icon>
             <{ drink.icon }>
           </div>
