@@ -1,15 +1,8 @@
 component Main {
   connect Application exposing { page }
 
-  style base {
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    color: #696969;
-  }
-
   fun render : Html {
-    <div::base>
+    <Layout>
       case (page) {
         Page::Home =>
           <Pages.Home/>
@@ -20,6 +13,6 @@ component Main {
         Page::NotFound =>
           <div>"Where am I?!"</div>
       }
-    </div>
+    </Layout>
   }
 }

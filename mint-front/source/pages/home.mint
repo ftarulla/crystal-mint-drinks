@@ -1,43 +1,24 @@
 component Pages.Home {
-  style home {
-    flex: 1;
-  }
-
-  style title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    img {
-      width: 48px;
-    }
-    h1 {
-      color: #ed8e25;
-    }
-  }
-
   style description {
     font-size: 20px;
     padding: 0 15px;
-
-    a {
-      text-decoration: none;
-      color: #ed8e25;
-      font-weight: bold;
-      font-family: cursive;
-    }
   }
 
   style mint {
-    color: #33be75 !important;
+    color: #02b046 !important;
   }
 
   style crystal {
     color: #000 !important;
   }
 
+  style lang {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
   style enter {
-    margin: 1em 0 0;
+    margin: 2em 1em 0;
     text-align: right;
 
     a {
@@ -57,26 +38,21 @@ component Pages.Home {
   }
 
   fun render : Html {
-    <div::home>
-      <div::title>
-        <img src="./tropical-drink_1f379.png"/>
-        <h1>"Summer drinks!"</h1>
-      </div>
-
+    <>
       <div::description>
         <span>
           "A simple site with 4 non-alcoholic summer drinks as featured in "
           <a href="https://www.fifteenspatulas.com/4-refreshing-summer-drinks/" target="_blank">"4 Refreshing Summer Drinks"</a>
-          "! The site was built using "
-          <a::mint href="https://www.mint-lang.com" target="_blank">"Mint"</a>
+          "! The site was built as a PoC using "
+          <a::mint::lang href="https://www.mint-lang.com" target="_blank">"Mint"</a>
           " in the frontend and "
-          <a::crystal href="https://crystal-lang.org/" target="_blank">"Crystal"</a>
+          <a::crystal::lang href="https://crystal-lang.org/" target="_blank">"Crystal"</a>
           " in the backend."
         </span>
         <div::enter>
           <a href="/drinks">"Here are the recipes ..."</a>
         </div>
       </div>
-    </div>
+    </>
   }
 }
