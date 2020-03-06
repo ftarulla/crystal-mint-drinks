@@ -4,14 +4,8 @@ component Main {
   style base {
     display: flex;
     flex-direction: column;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    font-family: verdana;
+    font-family: sans-serif;
+    color: #696969;
   }
 
   fun render : Html {

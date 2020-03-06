@@ -1,17 +1,6 @@
 component Pages.Home {
   style home {
     flex: 1;
-    background-image: url("./jamie-street-vcn2ndJ5LwE-unsplash.jpg");
-    background-size: cover;
-    padding: 100px;
-
-    h1 {
-      font-size: 84px;
-      color: #ffc925;
-      text-shadow: 3px 3px #558ABB;
-      font-family: cursive;
-      margin: 24px 0;
-    }
   }
 
   style title {
@@ -20,40 +9,51 @@ component Pages.Home {
     align-items: center;
 
     img {
-      width: 100px;
+      width: 48px;
+    }
+    h1 {
+      color: #ed8e25;
     }
   }
 
   style description {
-    background-color: rgba(0,0,0,.7);
-    border-radius: 7px;
-    color: #FFF;
-    font-size: 24px;
-    padding: 15px;
+    font-size: 20px;
+    padding: 0 15px;
 
     a {
       text-decoration: none;
-      color: #ffc925;
-      font-style: italic;
+      color: #ed8e25;
+      font-weight: bold;
+      font-family: cursive;
     }
+  }
+
+  style mint {
+    color: #33be75 !important;
+  }
+
+  style crystal {
+    color: #000 !important;
   }
 
   style enter {
-    margin: 42px 0 0;
+    margin: 1em 0 0;
     text-align: right;
 
     a {
-      text-decoration: none;
-      color: #ffc925;
-      font-style: normal;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid;
+      border-color: #ed8e25;
+      border-radius: .25rem;
+      color: #ed8e25;
+      cursor: pointer;
+      padding: .375rem .75rem;
+      font-family: sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      vertical-align: middle;
     }
-  }
-
-  style imgCredits {
-    flex: 1;
-    height: 20px;
-    color: #777;
-    font-style: italic;
   }
 
   fun render : Html {
@@ -64,26 +64,18 @@ component Pages.Home {
       </div>
 
       <div::description>
-        <p>
+        <span>
           "A simple site with 4 non-alcoholic summer drinks as featured in "
           <a href="https://www.fifteenspatulas.com/4-refreshing-summer-drinks/" target="_blank">"4 Refreshing Summer Drinks"</a>
-          "!"
-        </p>
-
-        <p>
-          "Example site using "
-          <a href="https://www.mint-lang.com" target="_blank">"Mint"</a>
+          "! The site was built using "
+          <a::mint href="https://www.mint-lang.com" target="_blank">"Mint"</a>
           " in the frontend and "
-          <a href="https://crystal-lang.org/" target="_blank">"Crystal"</a>
-          " in the backend"
-        </p>
+          <a::crystal href="https://crystal-lang.org/" target="_blank">"Crystal"</a>
+          " in the backend."
+        </span>
         <div::enter>
           <a href="/drinks">"Here are the recipes ..."</a>
         </div>
-      </div>
-
-      <div::imgCredits>
-        "Photo by Jamie Street on Unsplash"
       </div>
     </div>
   }
