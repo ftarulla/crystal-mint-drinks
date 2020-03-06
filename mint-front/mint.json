@@ -1,0 +1,9 @@
+{
+  "name": "summer-drinks",
+  "source-directories": [
+    "source"
+  ],
+  "test-directories": [
+    "tests"
+  ]
+}
