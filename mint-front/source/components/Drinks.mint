@@ -11,7 +11,7 @@ component Drinks {
   style message {
     margin-bottom: 20px;
     font-weight: bold;
-    color: #999;
+    color: #777;
   }
 
   style divider {

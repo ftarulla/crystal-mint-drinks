@@ -23,17 +23,32 @@ component Drinks.Item {
       color: #{primary};
     }
     */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  style icon {
+    flex: 1;
+    max-width: 24px;
+    text-align: center;
   }
 
   style name {
+    flex: 1;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
+    margin: 0 0.2em 0;
   }
 
   fun render : Html {
     <div::base>
       <div::content>
         <a::link href={drink.url}>
+          <div::icon>
+            <{ drink.icon }>
+          </div>
           <div::name>
             <{ drink.name }>
           </div>
