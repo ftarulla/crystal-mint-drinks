@@ -5,7 +5,7 @@ component Layout {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    color: #777;
+    color: #{Theme.Default.text()};
 
     a {
       text-decoration: none;
@@ -24,7 +24,7 @@ component Layout {
         width: 48px;
       }
       h1 {
-        color: #ed8e25;
+        color: #{Theme.Default.primary()};
       }
     }
   }
@@ -42,7 +42,7 @@ component Layout {
     margin: 3em 0 0;
 
     a {
-      color: #ed8e25;
+      color: #{Theme.Default.primary()};
     }
   }
 

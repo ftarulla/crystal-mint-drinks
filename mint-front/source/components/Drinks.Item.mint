@@ -15,11 +15,11 @@ component Drinks.Item {
   style link {
     text-decoration: none;
     transition: 50ms;
-    color: #6a9981;
+    color: #{Theme.Default.secondary()};
     display: block;
 
     &:hover {
-      color: #405d4e;
+      color: #{Theme.Default.secondaryDarker()};
     }
 
     display: flex;

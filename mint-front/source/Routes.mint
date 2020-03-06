@@ -1,5 +1,4 @@
 routes {
-
   / {
     parallel {
       Application.navigateTo(Page::Home)

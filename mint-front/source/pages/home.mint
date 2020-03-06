@@ -10,7 +10,7 @@ component Pages.Home {
   }
 
   style fifteenspatulas {
-    color: #ed8e25;
+    color: #{Theme.Default.primary()};
   }
 
   style mint {
@@ -29,21 +29,21 @@ component Pages.Home {
   style enter {
     margin: 2em 1em 0;
     text-align: right;
+  }
 
-    a {
-      background-color: transparent;
-      background-image: none;
-      border: 1px solid;
-      border-color: #ed8e25;
-      border-radius: .25rem;
-      color: #ed8e25;
-      cursor: pointer;
-      padding: .375rem .75rem;
-      font-family: sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-      vertical-align: middle;
-    }
+  style btn {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid;
+    border-color: #{Theme.Default.primary()};
+    border-radius: .25rem;
+    color: #{Theme.Default.primary()};
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    vertical-align: middle;
   }
 
   fun render : Html {
@@ -58,9 +58,9 @@ component Pages.Home {
           <a::crystal::lang href="https://crystal-lang.org/" target="_blank">"Crystal"</a>
           " in the backend."
         </span>
-        <div::enter>
-          <a href="/drinks">"Here are the recipes ..."</a>
-        </div>
+      </div>
+      <div::enter>
+        <a::btn href="/drinks">"Here are the recipes ..."</a>
       </div>
     </>
   }
