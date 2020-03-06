@@ -1,12 +1,8 @@
 component Drinks.Item {
-  property drink : Drink = {
-    id = 0,
-    name = "",
-    url = ""
-  }
+  property drink : Drink = Drink.empty()
 
   style base {
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
     border-radius: 2px;
     background: #FFF;
     padding: 10px;
@@ -30,8 +26,7 @@ component Drinks.Item {
   }
 
   style name {
-    margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
   }
 

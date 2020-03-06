@@ -2,14 +2,23 @@ component Pages.Home {
   style description {
     font-size: 20px;
     padding: 0 15px;
+
+    a {
+      font-family: cursive;
+      font-weight: bold;
+    }
+  }
+
+  style fifteenspatulas {
+    color: #ed8e25;
   }
 
   style mint {
-    color: #02b046 !important;
+    color: #02b046;
   }
 
   style crystal {
-    color: #000 !important;
+    color: #000;
   }
 
   style lang {
@@ -42,7 +51,7 @@ component Pages.Home {
       <div::description>
         <span>
           "A simple site with 4 non-alcoholic summer drinks as featured in "
-          <a href="https://www.fifteenspatulas.com/4-refreshing-summer-drinks/" target="_blank">"4 Refreshing Summer Drinks"</a>
+          <a::fifteenspatulas href="https://www.fifteenspatulas.com/4-refreshing-summer-drinks/" target="_blank">"4 Refreshing Summer Drinks"</a>
           "! The site was built as a PoC using "
           <a::mint::lang href="https://www.mint-lang.com" target="_blank">"Mint"</a>
           " in the frontend and "

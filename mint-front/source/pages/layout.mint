@@ -5,32 +5,32 @@ component Layout {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    color: #696969;
+    color: #777;
 
     a {
       text-decoration: none;
-      color: #ed8e25;
-      font-weight: bold;
-      font-family: cursive;
+    }
+  }
+
+  style header {
+    flex: 1;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        width: 48px;
+      }
+      h1 {
+        color: #ed8e25;
+      }
     }
   }
 
   style content {
     flex: 1;
-  }
-
-  style header {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    img {
-      width: 48px;
-    }
-    h1 {
-      color: #ed8e25;
-    }
   }
 
   style footer {
@@ -39,13 +39,19 @@ component Layout {
     flex-direction: column;
     align-items: center;
     margin: 3em 0 0;
+
+    a {
+      color: #ed8e25;
+    }
   }
 
   fun render : Html {
     <div::base>
       <div::header>
-        <img src="./tropical-drink_1f379.png"/>
-        <h1>"Summer drinks!"</h1>
+        <a href="/">
+          <img src="./tropical-drink_1f379.png"/>
+          <h1>"Summer drinks!"</h1>
+        </a>
       </div>
 
       <div::content>

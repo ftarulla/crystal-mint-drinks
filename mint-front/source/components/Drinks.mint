@@ -15,7 +15,7 @@ component Drinks {
   }
 
   style divider {
-    margin: 20px 0;
+    margin: 1em 0;
   }
 
   get drinks : Array(Drink) {
