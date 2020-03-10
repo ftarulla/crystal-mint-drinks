@@ -1,6 +1,11 @@
 component Drinks.Item {
   property drink : Drink = Drink.empty()
 
+  connect Theme exposing {
+    secondary,
+    secondaryDarker
+  }
+
   style base {
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
     border-radius: 2px;
@@ -15,11 +20,11 @@ component Drinks.Item {
   style link {
     text-decoration: none;
     transition: 50ms;
-    color: #{Theme.Default.secondary()};
+    color: #{secondary};
     display: block;
 
     &:hover {
-      color: #{Theme.Default.secondaryDarker()};
+      color: #{secondaryDarker};
     }
 
     display: flex;

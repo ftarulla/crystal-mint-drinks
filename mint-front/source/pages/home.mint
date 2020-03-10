@@ -1,4 +1,6 @@
 component Pages.Home {
+  connect Theme exposing { primary }
+
   style description {
     font-size: 20px;
     padding: 0 15px;
@@ -10,7 +12,7 @@ component Pages.Home {
   }
 
   style fifteenspatulas {
-    color: #{Theme.Default.primary()};
+    color: #{primary};
   }
 
   style mint {
@@ -35,9 +37,9 @@ component Pages.Home {
     background-color: transparent;
     background-image: none;
     border: 1px solid;
-    border-color: #{Theme.Default.primary()};
+    border-color: #{primary};
     border-radius: .25rem;
-    color: #{Theme.Default.primary()};
+    color: #{primary};
     cursor: pointer;
     padding: .375rem .75rem;
     font-family: sans-serif;

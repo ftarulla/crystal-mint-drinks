@@ -1,5 +1,6 @@
 component Drinks {
   connect Stores.Drinks exposing { status }
+  connect Theme exposing { text }
 
   style base {
     flex-direction: column;
@@ -11,7 +12,7 @@ component Drinks {
   style message {
     margin-bottom: 20px;
     font-weight: bold;
-    color: #{Theme.Default.text()};
+    color: #{text};
   }
 
   style divider {

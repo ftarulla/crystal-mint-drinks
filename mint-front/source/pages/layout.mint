@@ -1,11 +1,16 @@
 component Layout {
   property children : Array(Html) = []
 
+  connect Theme exposing {
+    text,
+    primary
+  }
+
   style base {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    color: #{Theme.Default.text()};
+    color: #{text};
 
     a {
       text-decoration: none;
@@ -24,7 +29,7 @@ component Layout {
         width: 48px;
       }
       h1 {
-        color: #{Theme.Default.primary()};
+        color: #{primary};
       }
     }
   }
@@ -42,7 +47,7 @@ component Layout {
     margin: 3em 0 0;
 
     a {
-      color: #{Theme.Default.primary()};
+      color: #{primary};
     }
   }
 
