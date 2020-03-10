@@ -33,7 +33,6 @@ store Stores.Drinks {
                               /* JSON to Drinks */
                               drinks = decode object as Stores.Status.Drinks
 
-
                               Stores.Status::Ok(drinks)
 
                             } catch Object.Error => error {

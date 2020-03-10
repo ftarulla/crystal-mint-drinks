@@ -1,8 +1,6 @@
 routes {
   / {
-    parallel {
-      Application.navigateTo(Page::Home)
-    }
+    Application.navigateTo(Page::Home)
   }
 
   /drinks {
